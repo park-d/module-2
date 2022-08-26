@@ -1,0 +1,9 @@
+h2{
+    background-image:url(./images/background1.jpg);
+    background-size: cover; 
+    height: 110px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    padding: 20px;
+}
