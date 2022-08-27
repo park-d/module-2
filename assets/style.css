@@ -7,3 +7,29 @@ h2{
     align-items: flex-end;
     padding: 20px;
 }
+
+.firstapp, .otherapps{
+    filter: opacity(50%);
+}
+
+.firstapp:hover, .otherapps:hover{
+    filter: opacity(100%);
+    filter: brightness(100%);    
+}
+
+aside{
+    display: block;
+    float: left;
+    width: 175px;
+    text-align: right;
+    padding: 10px;
+}
+
+.contents{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px;
+    width: auto;
+    border-left: 3px solid black;
+}
