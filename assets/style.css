@@ -16,7 +16,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 10px 0;
 }
 
 header h1 {
@@ -24,37 +24,53 @@ header h1 {
     font-size: 40px;
     font-weight: bold;
     background-color: var(--highlight);
-    padding: 5px 0 5px 30px;
+    padding: 5px 5px 5px 45px;
 }
 
 header nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
+    width: auto;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin-top: 15px;
 }
 
-header a {
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li{
+    padding: 0 10px;
+}
+
+header nav ul li a{
+    border-bottom: 4px solid var(--highlight);
     color: var(--highlight);
     font-size: 22px;
     font-weight: bold;
     text-decoration: none;
-    position: relative;
-    padding: 0 15px;
-    z-index: 1;
-}
+    box-shadow: inset 0 0 0 0 var(--highlight);
+    transition: color .4s ease-in-out, box-shadow .4s ease-in-out;
+    padding:  0 12px;
+  }
+
+  header nav ul li a:hover {
+    box-shadow: inset 0 -150px 0 0 var(--highlight);
+    color: var(--background);
+  }
 
 /* content under header with subtitle styling */
-h2{
+.banner{
     background-image:url(./images/background1.jpg);
-    height: 250px;
+    height: 200px;
     background-size: cover;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-    align-items: flex-end;
+}
+
+h2{
     padding: 25px;
     font-size: 35px;
+    display: flex;
+    color: var(--background);
 }
 
 /* styling for title for each section*/
@@ -62,49 +78,92 @@ h3 {
     font-size: 40px;
 }
 
-/* styling for project links and hover qualities*/
-.firstapp, .otherapps{
-    filter: opacity(50%);
-    margin: 10px;
+.aboutme p {
+    padding: 15px;
+    width: 90%;
 }
-
-.firstapp:hover, .otherapps:hover{
-    filter: opacity(100%);
-    filter: brightness(100%);    
-}
-
 
 /* styling to make titles/asides show up next to the content*/
 aside{
-    display: block;
     float: left;
-    width: 175px;
+    width:12%;
     text-align: right;
-    padding: 10px 10px 10px 100px;
-    border-right: 5px solid black;
+    margin-right: 25px;
 }
 
 .contents{
     display: flex;
     flex-wrap: wrap;
-    margin: 10px;
-    padding: 10px;
     width: auto;
     border-left: 5px solid black;
-    justify-content: center;
+    justify-content:center;
+    margin: 40px 0;
+    padding: 10px 0;
 }
 
-.firstapp p, .otherapps p{
-    position: absolute;
-    top: 160px;
+
+#firstapp{
+    width: 90%;
+    background-image:url(./images/prework.jpg);
+    background-size: cover;
+    height: 500px;
+}
+
+.apps{
+    width: 45%;
+    height: 200px;
+    gap: 10px;
     border: 5px solid black;
+
+}
+
+#module1{
+    background-image:url(./images/refactor.jpg);
+    background-size: cover;
+}
+
+#placeholder1{
+    background-image:url(./images/stock1.jpg);
+    background-size: cover;
+}
+
+#placeholder2{
+    background-image:url(./images/stock2.jpg);
+    background-size: cover;
+}
+
+#placeholder3{
+    background-image:url(./images/stock3.jpg);
+    background-size: cover;
+}
+
+/* styling for project links and hover qualities*/
+.apps{
+    filter: opacity(50%);
+}
+
+.apps:hover{
+    filter: opacity(100%);
+    filter: brightness(100%);    
+}
+
+.projecttag{
+    overflow:wrap;
+    border: 5px solid black;
+    position: absolute;
+    bottom: 5%;
     width: fit-content;
+    height: fit-content;
     padding: 5px;
     background-color: black;
     color: white;
-    z-index: 1;
 }
 
-.firstapp img, .otherapps img{
-    border: 5px solid black;
+h4{
+    font-size: 28px;
+    padding: 8px 0;
+}
+.projecttag p{
+    font-size: 14px;
+    padding-bottom: 8px;
 }
