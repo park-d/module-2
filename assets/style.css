@@ -2,7 +2,7 @@
 :root {
     --background: #625D64;
     --content: #FB6D4D;
-    --highlight: #FBC19C;
+    --highlight: rgb(251, 193, 156);
 }
 
 /* setting characteristics for all body content */
@@ -90,10 +90,7 @@ h3 {
     font-weight: bold;
 }
 
-.aboutme p {
-    padding: 15px;
-    width: 90%;
-}
+
 
 /* styling to make titles/asides show up next to the content*/
 aside{
@@ -117,66 +114,77 @@ section {
     justify-content:center;
     padding: 10px 0;
 }
-/* 
+
 #headshot{
-    float: left;
     width: 200px;
 }
 
 .aboutme .contents p{
-text-align: justify;
-} */
+    text-align: justify;
+    display: inline;
+    float: right;
+}
+
+.aboutme p {
+    padding: 15px;
+    width: 90%;
+}
+
 .apps{
     width: 44%;
     height: 300px;
     border: 5px solid var(--background);
     box-sizing: border-box;
     margin: 1% 1%;
+    background-color: rgba(251, 192, 156, 0.37);;
+    background-blend-mode: soft-light;
+    transition:all 0.5s;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    text-decoration: none;
 }
 
 #firstapp{
     width: 90%;
     background-image:url(./images/prework.jpg);
     background-size: cover;
+    background-position: center;
     height: 700px;
-    z-index: 1;
 }
 
 #module1{
     background-image:url(./images/refactor.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 #placeholder1{
     background-image:url(./images/stock1.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 #placeholder2{
     background-image:url(./images/stock2.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 #placeholder3{
     background-image:url(./images/stock3.jpg);
     background-size: cover;
+    background-position: center;
 }
 
-/* styling for project links and hover qualities*/
-.apps{
-    filter: opacity(50%);
-}
 
 .apps:hover{
-    filter: opacity(100%); 
+    background-color:rgba(0, 0, 0, 0.0) 
 }
 
 .projecttag{
     border: 5px solid var(--background);
-    position: absolute;
-    bottom: 5%;
     width: fit-content;
-    height: fit-content;
     padding: 5px;
     background-color: var(--background);
     color: white;
