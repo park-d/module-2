@@ -7,9 +7,10 @@
 
 /* setting characteristics for all body content */
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
     box-sizing: border-box;
-    background-color: antiquewhite;
+    background-color: rgb(247, 238, 228);
+    font-size: 16px;
 }
 
 /* header styling */
@@ -18,12 +19,12 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
 header h1 {
     color: var(--background);
-    font-size: 40px;
+    font-size: 275%;
     font-weight: bold;
     background-color: var(--highlight);
     padding: 5px 5px 5px 45px;
@@ -32,13 +33,12 @@ header h1 {
 header nav {
     width: auto;
     justify-content: space-between;
-    padding: 0 50px;
     margin-top: 15px;
 }
 
 header nav ul{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 header nav ul li{
@@ -48,12 +48,12 @@ header nav ul li{
 header nav ul li a{
     border-bottom: 4px solid var(--highlight);
     color: var(--highlight);
-    font-size: 22px;
+    font-size: 125%;
     font-weight: bold;
     text-decoration: none;
     box-shadow: inset 0 0 0 0 var(--highlight);
-    transition: color .4s ease-in-out, box-shadow .4s ease-in-out;
-    padding:  0 12px;
+    transition: color .5s ease-in-out, box-shadow .4s ease-in-out;
+    padding:  5px 12px;
   }
 
   header nav ul li a:hover {
@@ -63,23 +63,31 @@ header nav ul li a{
 
 /* content under header with subtitle styling */
 .banner{
-    background-image:url(./images/background1.jpg);
-    height: 200px;
+    background-image:url(./images/background2.jpg);
+    height: 300px;
     background-size: cover;
     text-align: end;
-    
+    /* margin: 0px 0px;     */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    flex-direction: row-reverse;
 }
 
 h2{
-    padding: 25px;
-    font-size: 35px;
     color: var(--background);
-    font-weight:bold;
+    font-weight: bold;
+    background-color: var(--highlight);
+    padding: 25px;
+    margin: 25px;
+    font-size: 150%;
 }
 
 /* styling for title for each section*/
 h3 {
-    font-size: 40px;
+    font-size: 220%;
+    font-weight: bold;
 }
 
 .aboutme p {
@@ -96,6 +104,10 @@ aside{
     color: var(--content);
 }
 
+section {
+    margin: 40px 0px;
+}
+
 .contents{
     display: flex;
     flex-wrap: wrap;
@@ -103,7 +115,6 @@ aside{
     box-sizing: border-box;
     border-left: 5px solid var(--content);
     justify-content:center;
-    margin: 40px 0;
     padding: 10px 0;
 }
 
@@ -164,7 +175,7 @@ aside{
 }
 
 h4{
-    font-size: 28px;
+    font-size: 175%;
     padding: 8px 0;
 }
 .projecttag p{
@@ -172,9 +183,18 @@ h4{
     padding-bottom: 8px;
 }
 
+footer{
+    margin-bottom: 40px;
+}
 footer ul{
     display: flex;
     justify-content: space-between;
+    padding: 40px 0px;
+    flex-wrap: wrap;
+    width: auto;
+    box-sizing: border-box;
+    border-left: 5px solid var(--content);
+    justify-content:center;
 }
 
 footer ul li{
@@ -192,15 +212,117 @@ footer ul li a {
   footer ul li a{
     border-bottom: 4px solid var(--content);
     color: var(--content);
-    font-size: 22px;
+    font-size: 110%;
     font-weight: bold;
     text-decoration: none;
     box-shadow: inset 0 0 0 0 var(--content);
-    transition: color .4s ease-in-out, box-shadow .4s ease-in-out;
-    padding:  0 12px;
+    transition: color .5s ease-in-out, box-shadow .4s ease-in-out;
+    padding:  5px 12px;
   }
 
 footer ul li a:hover {
     box-shadow: inset 0 -150px 0 0 var(--content);
     color: var(--highlight);
   }
+
+/* media query to adjust for font size */
+@media screen and (max-width: 1024px) {
+    body{
+        font-size: 14px;
+    }
+}
+
+/* media query for tablets */
+@media screen and (max-width: 768px) {
+    header{
+        text-align: center;
+        justify-content: center;
+        padding: 0px 0px 20px 0px;
+    }
+    header h1{
+        width: 100%;
+        font-size: 400%;
+        padding: 10px 5px 10px 5px;
+    }
+    .banner{margin: 0px;}
+    aside{
+        float: none;
+        font-size: 150%;
+        width: fit-content;
+        text-align: left;
+        padding: 0px 20px 10px 20px;
+    }
+    .contents{
+        position: relative;
+        border-left: none;
+        margin-top:0px;
+    }
+    
+    .contents::before{
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 2.5%;
+        border-bottom: 5px solid var(--content);
+        width: 95%;
+    }
+
+    h2{
+       position: relative;
+       bottom: 0;
+       right: 0;
+       width: max-content;
+    }
+
+  #firstapp{
+        height: 500px;
+    }
+    .apps{
+        height: 200px;
+    }
+
+    footer ul{ 
+        position: relative;
+        border-left: none;
+        margin-top:0px;
+    }
+    footer ul::before{
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 2.5%;
+        border-bottom: 5px solid var(--content);
+        width: 95%;
+    }
+}
+
+/* Media query for phones */
+@media screen and (max-width: 576px) {
+    header nav ul{
+        display: block;
+    }
+    header nav ul li{
+        padding: 15px 0px;
+    }
+
+    #firstapp{
+        height: 350px;
+    }
+    .apps{
+        height: 350px;
+        width: 90%;
+    }
+
+footer{
+    margin-bottom: 10px;
+}
+    footer ul{ 
+        display: block;
+        text-align: center;
+        justify-content: center;
+    }
+
+    footer ul li{
+        padding: 15px 0px;
+    }
+} 
