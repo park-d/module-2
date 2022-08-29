@@ -9,7 +9,7 @@
 body {
     font-family: 'Montserrat Alternates', sans-serif;
     box-sizing: border-box;
-    background-color: rgb(247, 238, 228);
+    background-color: rgb(241, 241, 240);
     font-size: 16px;
 }
 
@@ -67,7 +67,7 @@ header nav ul li a{
     height: 300px;
     background-size: cover;
     text-align: end;
-    /* margin: 0px 0px;     */
+    margin: 0px 0px;    
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -117,7 +117,15 @@ section {
     justify-content:center;
     padding: 10px 0;
 }
+/* 
+#headshot{
+    float: left;
+    width: 200px;
+}
 
+.aboutme .contents p{
+text-align: justify;
+} */
 .apps{
     width: 44%;
     height: 300px;
