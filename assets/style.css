@@ -115,7 +115,7 @@ section {
 .about-me-text p{
     padding: 15px
 }
-.aboutme .contents {
+.about-me .contents {
     align-items: center;
 }
 
@@ -134,7 +134,7 @@ section {
     padding: 0 0 20px 0;
     text-decoration: none;
 }
-#firstapp{
+#first-app{
     width: 90%;
     background-image:url(./images/prework.jpg);
     background-size: cover;
@@ -164,7 +164,7 @@ section {
 .apps:hover{
     background-color:rgba(0, 0, 0, 0.0) 
 }
-.projecttag{
+.project-tag{
     border: 5px solid var(--background);
     width: fit-content;
     padding: 5px;
@@ -175,7 +175,7 @@ h4{
     font-size: 200%;
     padding: 8px 0;
 }
-.projecttag p{
+.project-tag p{
     font-size: 14px;
     padding-bottom: 8px;
 }
@@ -266,7 +266,7 @@ footer ul li a:hover {
        right: 0;
        width: max-content;
     }
-    #firstapp{
+    #first-app{
         height: 500px;
     }
     .apps{
@@ -296,7 +296,7 @@ footer ul li a:hover {
     header nav ul li{
         padding: 15px 0px;
     }
-    #firstapp{
+    #first-app{
         height: 350px;
     }
     .apps{
@@ -324,7 +324,7 @@ footer ul li a:hover {
     .about-me-text p{
         padding: 15px 0px;
     }
-    .aboutme .contents {
+    .about-me .contents {
         align-items: center;
         text-align: left;
     }
