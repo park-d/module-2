@@ -2,18 +2,18 @@
 :root {
     --background: #625D64;
     --content: #FB6D4D;
-    --highlight: rgb(251, 193, 156);
+    --highlight: #fbc19c;
 }
 
 /* setting characteristics for all body content */
 body {
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
     box-sizing: border-box;
     background-color: rgb(241, 241, 240);
     font-size: 16px;
 }
 
-/* header styling */
+/* header and nav bar styling */
 header {
     background-color: var(--background);
     display: flex;
@@ -21,41 +21,35 @@ header {
     flex-wrap: wrap;
     padding: 15px 0;
 }
-
 header h1 {
     color: var(--background);
-    font-size: 275%;
+    font-size: 300%;
     font-weight: bold;
     background-color: var(--highlight);
     padding: 5px 5px 5px 45px;
 }
-
 header nav {
     width: auto;
     justify-content: space-between;
     margin-top: 15px;
 }
-
 header nav ul{
     display: flex;
     justify-content: space-around;
 }
-
 header nav ul li{
     padding: 0 10px;
 }
-
 header nav ul li a{
     border-bottom: 4px solid var(--highlight);
     color: var(--highlight);
-    font-size: 125%;
+    font-size: 150%;
     font-weight: bold;
     text-decoration: none;
     box-shadow: inset 0 0 0 0 var(--highlight);
     transition: color .5s ease-in-out, box-shadow .4s ease-in-out;
     padding:  5px 12px;
   }
-
   header nav ul li a:hover {
     box-shadow: inset 0 -150px 0 0 var(--highlight);
     color: var(--background);
@@ -74,23 +68,20 @@ header nav ul li a{
     align-items: flex-end;
     flex-direction: row-reverse;
 }
-
 h2{
     color: var(--background);
     font-weight: bold;
     background-color: var(--highlight);
     padding: 25px;
     margin: 25px;
-    font-size: 150%;
+    font-size: 175%;
 }
 
 /* styling for title for each section*/
 h3 {
-    font-size: 220%;
+    font-size: 250%;
     font-weight: bold;
 }
-
-
 
 /* styling to make titles/asides show up next to the content*/
 aside{
@@ -100,11 +91,9 @@ aside{
     margin-right: 25px;
     color: var(--content);
 }
-
 section {
     margin: 40px 0px;
 }
-
 .contents{
     display: flex;
     flex-wrap: wrap;
@@ -115,21 +104,22 @@ section {
     padding: 10px 0;
 }
 
+/* styling for about me picture and text */
 #headshot{
-    width: 200px;
+    width: 25%;
+}
+.about-me-text{
+    padding-left: 5%;
+    width: 60%;
+}
+.about-me-text p{
+    padding: 15px
+}
+.aboutme .contents {
+    align-items: center;
 }
 
-.aboutme .contents p{
-    text-align: justify;
-    display: inline;
-    float: right;
-}
-
-.aboutme p {
-    padding: 15px;
-    width: 90%;
-}
-
+/* styling for work section images/links */
 .apps{
     width: 44%;
     height: 300px;
@@ -144,7 +134,6 @@ section {
     padding: 0 0 20px 0;
     text-decoration: none;
 }
-
 #firstapp{
     width: 90%;
     background-image:url(./images/prework.jpg);
@@ -152,36 +141,29 @@ section {
     background-position: center;
     height: 700px;
 }
-
 #module1{
     background-image:url(./images/refactor.jpg);
     background-size: cover;
     background-position: center;
 }
-
 #placeholder1{
     background-image:url(./images/stock1.jpg);
     background-size: cover;
     background-position: center;
 }
-
 #placeholder2{
     background-image:url(./images/stock2.jpg);
     background-size: cover;
     background-position: center;
 }
-
 #placeholder3{
     background-image:url(./images/stock3.jpg);
     background-size: cover;
     background-position: center;
 }
-
-
 .apps:hover{
     background-color:rgba(0, 0, 0, 0.0) 
 }
-
 .projecttag{
     border: 5px solid var(--background);
     width: fit-content;
@@ -189,9 +171,8 @@ section {
     background-color: var(--background);
     color: white;
 }
-
 h4{
-    font-size: 175%;
+    font-size: 200%;
     padding: 8px 0;
 }
 .projecttag p{
@@ -199,6 +180,7 @@ h4{
     padding-bottom: 8px;
 }
 
+/* styling for contact section at the bottom of the page */
 footer{
     margin-bottom: 40px;
 }
@@ -212,43 +194,38 @@ footer ul{
     border-left: 5px solid var(--content);
     justify-content:center;
 }
-
 footer ul li{
     padding: 0 10px;
-
 }
 
 footer ul li a {
     text-decoration: none;
     color: var(--content);
     padding:  0 12px;
-  }
-
-
-  footer ul li a{
+}
+footer ul li a{
     border-bottom: 4px solid var(--content);
     color: var(--content);
-    font-size: 110%;
+    font-size: 125%;
     font-weight: bold;
     text-decoration: none;
     box-shadow: inset 0 0 0 0 var(--content);
     transition: color .5s ease-in-out, box-shadow .4s ease-in-out;
     padding:  5px 12px;
-  }
-
+}
 footer ul li a:hover {
     box-shadow: inset 0 -150px 0 0 var(--content);
     color: var(--highlight);
-  }
+}
 
-/* media query to adjust for font size */
+/* media query to adjust for font size with changing screen*/
 @media screen and (max-width: 1024px) {
     body{
         font-size: 14px;
     }
 }
 
-/* media query for tablets */
+/* media query for tablets and medium sized screens*/
 @media screen and (max-width: 768px) {
     header{
         text-align: center;
@@ -260,7 +237,9 @@ footer ul li a:hover {
         font-size: 400%;
         padding: 10px 5px 10px 5px;
     }
-    .banner{margin: 0px;}
+    .banner{
+        margin: 0px;
+    }
     aside{
         float: none;
         font-size: 150%;
@@ -273,7 +252,6 @@ footer ul li a:hover {
         border-left: none;
         margin-top:0px;
     }
-    
     .contents::before{
         content: '';
         position: absolute;
@@ -282,25 +260,23 @@ footer ul li a:hover {
         border-bottom: 5px solid var(--content);
         width: 95%;
     }
-
     h2{
        position: relative;
        bottom: 0;
        right: 0;
        width: max-content;
     }
-
-  #firstapp{
+    #firstapp{
         height: 500px;
     }
     .apps{
         height: 200px;
     }
-
     footer ul{ 
         position: relative;
         border-left: none;
         margin-top:0px;
+        font-size: 88%;
     }
     footer ul::before{
         content: '';
@@ -312,7 +288,7 @@ footer ul li a:hover {
     }
 }
 
-/* Media query for phones */
+/* Media query for phones and smaller screens*/
 @media screen and (max-width: 576px) {
     header nav ul{
         display: block;
@@ -320,7 +296,6 @@ footer ul li a:hover {
     header nav ul li{
         padding: 15px 0px;
     }
-
     #firstapp{
         height: 350px;
     }
@@ -328,17 +303,29 @@ footer ul li a:hover {
         height: 350px;
         width: 90%;
     }
-
-footer{
+    footer{
     margin-bottom: 10px;
-}
+    }
     footer ul{ 
         display: block;
         text-align: center;
         justify-content: center;
     }
-
     footer ul li{
         padding: 15px 0px;
+    }
+    #headshot{
+        width: 80%;
+        padding-top: 15px;
+    }
+    .about-me-text{
+        width: 90%;
+    }
+    .about-me-text p{
+        padding: 15px 0px;
+    }
+    .aboutme .contents {
+        align-items: center;
+        text-align: left;
     }
 } 
