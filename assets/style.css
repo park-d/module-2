@@ -7,7 +7,7 @@
 
 /* setting characteristics for all body content */
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
+    font-family: 'Trebuchet MS', Arial, sans-serif;;
     box-sizing: border-box;
     background-color: rgb(241, 241, 240);
     font-size: 16px;
