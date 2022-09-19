@@ -7,7 +7,8 @@
 
 /* setting characteristics for all body content */
 body {
-    font-family: 'Trebuchet MS', Arial, sans-serif;;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    ;
     box-sizing: border-box;
     background-color: rgb(241, 241, 240);
     font-size: 16px;
@@ -21,6 +22,7 @@ header {
     flex-wrap: wrap;
     padding: 15px 0;
 }
+
 header h1 {
     color: var(--background);
     font-size: 300%;
@@ -28,19 +30,23 @@ header h1 {
     background-color: var(--highlight);
     padding: 5px 5px 5px 45px;
 }
+
 header nav {
     width: auto;
     justify-content: space-between;
     margin-top: 15px;
 }
-header nav ul{
+
+header nav ul {
     display: flex;
     justify-content: space-around;
 }
-header nav ul li{
+
+header nav ul li {
     padding: 0 10px;
 }
-header nav ul li a{
+
+header nav ul li a {
     border-bottom: 4px solid var(--highlight);
     color: var(--highlight);
     font-size: 150%;
@@ -48,27 +54,29 @@ header nav ul li a{
     text-decoration: none;
     box-shadow: inset 0 0 0 0 var(--highlight);
     transition: color .5s ease-in-out, box-shadow .4s ease-in-out;
-    padding:  5px 12px;
-  }
-  header nav ul li a:hover {
+    padding: 5px 12px;
+}
+
+header nav ul li a:hover {
     box-shadow: inset 0 -150px 0 0 var(--highlight);
     color: var(--background);
-  }
+}
 
 /* content under header with subtitle styling */
-.banner{
-    background-image:url(./images/background2.jpg);
+.banner {
+    background-image: url(./images/background2.jpg);
     height: 300px;
     background-size: cover;
     text-align: end;
-    margin: 0px 0px;    
+    margin: 0px 0px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-end;
     flex-direction: row-reverse;
 }
-h2{
+
+h2 {
     color: var(--background);
     font-weight: bold;
     background-color: var(--highlight);
@@ -84,102 +92,119 @@ h3 {
 }
 
 /* styling to make titles/asides show up next to the content*/
-aside{
+aside {
     float: left;
-    width:12%;
+    width: 12%;
     text-align: right;
     margin-right: 25px;
     color: var(--content);
 }
+
 section {
     margin: 40px 0px;
 }
-.contents{
+
+.contents {
     display: flex;
     flex-wrap: wrap;
     width: auto;
     box-sizing: border-box;
     border-left: 5px solid var(--content);
-    justify-content:center;
+    justify-content: center;
     padding: 10px 0;
 }
 
 /* styling for about me picture and text */
-#headshot{
+#headshot {
     width: 25%;
 }
-.about-me-text{
+
+.about-me-text {
     padding-left: 5%;
     width: 60%;
 }
-.about-me-text p{
+
+.about-me-text p {
     padding: 15px
 }
+
 .about-me .contents {
     align-items: center;
 }
 
 /* styling for work section images/links */
-.apps{
+.apps {
     width: 44%;
     height: 300px;
     border: 5px solid var(--background);
     box-sizing: border-box;
     margin: 1% 1%;
-    background-color: rgba(251, 192, 156, 0.37);;
+    background-color: rgba(251, 192, 156, 0.37);
+    ;
     background-blend-mode: soft-light;
-    transition:all 0.5s;
+    transition: all 0.5s;
     display: flex;
     align-items: flex-end;
     padding: 0 0 20px 0;
     text-decoration: none;
 }
-#first-app{
+
+#project-1 {
     width: 90%;
-    background-image:url(./images/prework-study-guide.JPG);
+    background-image: url(./images/prework-study-guide.JPG);
+    background-image: url(./images/weather-or-not.JPG);
     background-size: cover;
     height: 700px;
 }
-#module-1{
-    background-image:url(./images/Full-Webpage-Screenshot.png);
+
+#module-1 {
+    background-image: url(./images/Full-Webpage-Screenshot.png);
     background-size: cover;
 }
-#module-4{
-    background-image:url(./images/code-quiz-screenshot.JPG);
-    background-size:cover
+
+#module-4 {
+    background-image: url(./images/code-quiz-screenshot.JPG);
+    background-size: cover
 }
-#module-6{
-    background-image:url(./images/weather-dashboard-screenshot.JPG);
+
+#module-6 {
+    background-image: url(./images/weather-dashboard-screenshot.JPG);
     background-size: cover;
 }
-#project-1{
-    background-image: url(./images/weather-or-not.JPG);
+
+#prework-study {
+    background-image: url(./images/prework-study-guide.JPG);
     background-size: cover;
 }
-.apps:hover{
-    background-color:rgba(0, 0, 0, 0.0) 
+
+.apps:hover {
+    background-color: rgba(0, 0, 0, 0.0)
 }
-.project-tag{
+
+.project-tag {
     border: 5px solid var(--background);
     width: fit-content;
     padding: 5px;
     background-color: var(--background);
     color: white;
 }
-h4{
+
+h4 {
     font-size: 200%;
     padding: 8px 0;
 }
-.project-tag p{
+
+.project-tag p {
     font-size: 14px;
     padding-bottom: 8px;
 }
 
 /* styling for contact section at the bottom of the page */
-footer{
+footer {
     margin-bottom: 40px;
 }
-footer ul{
+
+footer ul {
     display: flex;
     justify-content: space-between;
     padding: 40px 0px;
@@ -187,18 +212,20 @@ footer ul{
     width: auto;
     box-sizing: border-box;
     border-left: 5px solid var(--content);
-    justify-content:center;
+    justify-content: center;
 }
-footer ul li{
+
+footer ul li {
     padding: 0 10px;
 }
 
 footer ul li a {
     text-decoration: none;
     color: var(--content);
-    padding:  0 12px;
+    padding: 0 12px;
 }
-footer ul li a{
+
+footer ul li a {
     border-bottom: 4px solid var(--content);
     color: var(--content);
     font-size: 125%;
@@ -206,8 +233,9 @@ footer ul li a{
     text-decoration: none;
     box-shadow: inset 0 0 0 0 var(--content);
     transition: color .5s ease-in-out, box-shadow .4s ease-in-out;
-    padding:  5px 12px;
+    padding: 5px 12px;
 }
+
 footer ul li a:hover {
     box-shadow: inset 0 -150px 0 0 var(--content);
     color: var(--highlight);
@@ -215,39 +243,44 @@ footer ul li a:hover {
 
 /* media query to adjust for font size with changing screen*/
 @media screen and (max-width: 1024px) {
-    body{
+    body {
         font-size: 14px;
     }
 }
 
 /* media query for tablets and medium sized screens*/
 @media screen and (max-width: 768px) {
-    header{
+    header {
         text-align: center;
         justify-content: center;
         padding: 0px 0px 20px 0px;
     }
-    header h1{
+
+    header h1 {
         width: 100%;
         font-size: 400%;
         padding: 10px 5px 10px 5px;
     }
-    .banner{
+
+    .banner {
         margin: 0px;
     }
-    aside{
+
+    aside {
         float: none;
         font-size: 150%;
         width: fit-content;
         text-align: left;
         padding: 0px 20px 10px 20px;
     }
-    .contents{
+
+    .contents {
         position: relative;
         border-left: none;
-        margin-top:0px;
+        margin-top: 0px;
     }
-    .contents::before{
+
+    .contents::before {
         content: '';
         position: absolute;
         top: 0px;
@@ -255,25 +288,30 @@ footer ul li a:hover {
         border-bottom: 5px solid var(--content);
         width: 95%;
     }
-    h2{
-       position: relative;
-       bottom: 0;
-       right: 0;
-       width: max-content;
+
+    h2 {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        width: max-content;
     }
-    #first-app{
+
+    #first-app {
         height: 500px;
     }
-    .apps{
+
+    .apps {
         height: 200px;
     }
-    footer ul{ 
+
+    footer ul {
         position: relative;
         border-left: none;
-        margin-top:0px;
+        margin-top: 0px;
         font-size: 88%;
     }
-    footer ul::before{
+
+    footer ul::before {
         content: '';
         position: absolute;
         top: 0px;
@@ -285,42 +323,52 @@ footer ul li a:hover {
 
 /* Media query for phones and smaller screens*/
 @media screen and (max-width: 576px) {
-    header nav ul{
+    header nav ul {
         display: block;
     }
-    header nav ul li{
+
+    header nav ul li {
         padding: 15px 0px;
     }
-    #first-app{
+
+    #first-app {
         height: 350px;
     }
-    .apps{
+
+    .apps {
         height: 350px;
         width: 90%;
     }
-    footer{
-    margin-bottom: 10px;
+
+    footer {
+        margin-bottom: 10px;
     }
-    footer ul{ 
+
+    footer ul {
         display: block;
         text-align: center;
         justify-content: center;
     }
-    footer ul li{
+
+    footer ul li {
         padding: 15px 0px;
     }
-    #headshot{
+
+    #headshot {
         width: 80%;
         padding-top: 15px;
     }
-    .about-me-text{
+
+    .about-me-text {
         width: 90%;
     }
-    .about-me-text p{
+
+    .about-me-text p {
         padding: 15px 0px;
     }
+
     .about-me .contents {
         align-items: center;
         text-align: left;
     }
-} 
+}
