@@ -136,30 +136,25 @@ section {
 }
 #first-app{
     width: 90%;
-    background-image:url(./images/prework.jpg);
+    background-image:url(./images/prework-study-guide.JPG);
     background-size: cover;
-    background-position: center;
     height: 700px;
 }
-#module1{
-    background-image:url(./images/refactor.jpg);
+#module-1{
+    background-image:url(./images/Full-Webpage-Screenshot.png);
     background-size: cover;
-    background-position: center;
 }
-#placeholder1{
-    background-image:url(./images/stock1.jpg);
-    background-size: cover;
-    background-position: center;
+#module-4{
+    background-image:url(./images/code-quiz-screenshot.JPG);
+    background-size:cover
 }
-#placeholder2{
-    background-image:url(./images/stock2.jpg);
+#module-6{
+    background-image:url(./images/weather-dashboard-screenshot.JPG);
     background-size: cover;
-    background-position: center;
 }
-#placeholder3{
-    background-image:url(./images/stock3.jpg);
+#project-1{
+    background-image: url(./images/weather-or-not.JPG);
     background-size: cover;
-    background-position: center;
 }
 .apps:hover{
     background-color:rgba(0, 0, 0, 0.0) 
