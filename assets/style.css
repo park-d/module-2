@@ -149,12 +149,15 @@ section {
     text-decoration: none;
 }
 
-#project-1 {
+#project-2 {
     width: 90%;
-    background-image: url(./images/prework-study-guide.JPG);
-    background-image: url(./images/weather-or-not.JPG);
+    background-image: url(./images/TeamSpeak.JPG);
     background-size: cover;
     height: 700px;
+}
+#project-1 {
+    background-image: url(./images/weather-or-not.JPG);
+    background-size: cover;
 }
 
 #module-1 {
@@ -169,11 +172,6 @@ section {
 
 #module-6 {
     background-image: url(./images/weather-dashboard-screenshot.JPG);
-    background-size: cover;
-}
-
-#prework-study {
-    background-image: url(./images/prework-study-guide.JPG);
     background-size: cover;
 }
 
